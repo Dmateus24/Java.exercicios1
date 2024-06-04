@@ -1,0 +1,38 @@
+public class Quadrado {
+
+private double lado;
+
+
+public Quadrado(double lado) {
+this.lado = lado;
+}
+
+
+public void setLado(double lado) {
+this.lado = lado;
+}
+
+
+public double getLado() {
+return lado;
+}
+
+
+public double calcularArea() {
+return lado * lado;
+}
+
+public static void main(String[] args) {
+
+Quadrado Quadrado2 = new Quadrado(5);
+
+System.out.println("Lado: " + Quadrado2.getLado());
+
+Quadrado2.setLado(25);
+
+System.out.println("Novo Lado: " + Quadrado2.getLado());
+
+System.out.println("Área: " + Quadrado2.calcularArea());
+
+    }
+}
